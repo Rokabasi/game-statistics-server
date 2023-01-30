@@ -19,7 +19,7 @@ app.use((req,res,next) => {
     next();
 })
 
-app.use('/',userRoutes)
+app.use('/user',userRoutes)
 app.use('/game', gameRoutes)
 
 app.listen( port , () => {
